@@ -25,5 +25,5 @@ Você precisa ter o [Python 3.x](https://www.python.org/downloads/) instalado.
 ### 1. Clonar o Repositório
 
 ```bash
-git clone [https://github.com/andrade044/student_management.git](https://github.com/andrade044/student_management.git)
+git clone https://github.com/andrade044/student_management.githttps://github.com/andrade044/student_management.git)
 cd student_management
