@@ -22,9 +22,13 @@ with col2:
         
         rotation = st.selectbox('Turno',options=['Manhã', 'Tarde','Noite'])
 
-        payment = st.selectbox('Forma de Pagamento', options=['Ainda não especificado','Avista', 'Parcelado'])
+        payment = st.selectbox('Forma de Pagamento', 
+                               options=['Ainda não especificado',
+                                        'Avista', 'Parcelado'])
 
-        process_part = st.selectbox('Parte do processo', options=['Teorico', 'Prático A', 'Pratico B', 'Prático D'])
+        process_part = st.selectbox('Parte do processo', 
+                                    options=['Teorico', 'Prático A', 
+                                             'Pratico B', 'Prático D'])
 
         submit_button = st.form_submit_button(label='Cadastrar')
 

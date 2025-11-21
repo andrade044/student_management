@@ -53,11 +53,21 @@ with col2:
             phone = st.text_input('TELEFONE', value=aluno['telefone'])
             
             
-            rotation = st.selectbox('Turno', options=['Manhã', 'Tarde','Noite'], index=['Manhã', 'Tarde','Noite'].index(aluno['turno']))
+            rotation = st.selectbox('Turno', options=['Manhã', 'Tarde','Noite'], 
+                                    index=['Manhã', 'Tarde','Noite'].index(
+                                        aluno['turno']))
 
-            payment = st.selectbox('Forma de Pagamento', options=['Ainda não especificado','Avista', 'Parcelado'], index=['Ainda não especificado','Avista', 'Parcelado'].index(aluno['pagamento']))
+            payment = st.selectbox('Forma de Pagamento', 
+                                   options=['Ainda não especificado',
+                                            'Avista', 'Parcelado'], 
+                                   index=['Ainda não especificado',
+                                          'Avista', 'Parcelado'].index(aluno['pagamento']))
 
-            process_part = st.selectbox('Parte do processo', options=['Teorico', 'Prático A', 'Pratico B', 'Prático D'], index=['Teorico', 'Prático A', 'Pratico B', 'Prático D'].index(aluno['parte_processo']))
+            process_part = st.selectbox('Parte do processo', 
+                                        options=['Teorico', 'Prático A', 
+                                                 'Pratico B', 'Prático D'], 
+                                        index=['Teorico', 'Prático A', 'Pratico B', 
+                                               'Prático D'].index(aluno['parte_processo']))
             
             update_button = st.form_submit_button(label="ATUALIZAR DADOS")
 

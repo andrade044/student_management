@@ -1,7 +1,7 @@
 @echo off
-REM --- Navega para a pasta de scripts do ambiente virtual (se necessário) ---
+REM -
 call venv\Scripts\activate.bat
 
-REM --- Comando para rodar o Streamlit ---
+REM
 streamlit run main.py --browser.serverAddress=localhost
 pause
